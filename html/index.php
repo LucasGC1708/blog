@@ -1,12 +1,9 @@
 <?php 
     session_start();
     
-    if(isset($_SESSION)){
+    if(isset($_SESSION['email'])){
         $email = $_SESSION['email'];
         $nome = $_SESSION['nome'];
-    }else{
-        $email = 0;
-        $nome = 0;
     }
     ?>
 <!DOCTYPE html>
