@@ -1,3 +1,14 @@
+<?php 
+    session_start();
+    
+    if(isset($_SESSION)){
+        $email = $_SESSION['email'];
+        $nome = $_SESSION['nome'];
+    }else{
+        $email = 0;
+        $nome = 0;
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +25,10 @@
         <div class="interface">
             <div class="postar">
                 
-                <a href="index.php"><button>Nova Postagem <i class="fa-solid fa-envelope"></i></button></a>
+                <a href="postagem.php"><button>Nova Postagem <i class="fa-solid fa-envelope"></i></button></a>
                 <!-- <i class="fa-solid fa-list"></i> -->
             </div>
-            <div class="postagens">
-                <h2>Tema 1</h2>
-                <div class="informacoes">
-                    <img src="../img/blog1.jpg" alt="">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
-                        elit. Dolorum eum, ipsam rerum voluptatibus id alias
-                         nulla, quam, excepturi voluptatem ratione nesciunt.
-                          Eos rerum consequatur animi quaerat ad asperiores, 
-                          voluptatum doloremque!</p>
-                </div>
-            </div>
+            <?php include('../php/posts.php');?>
         </div>
     </section>
 </body>
