@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
-        <input type="text">
-    </form>
+    <?php include('header.php')?>
+    
 </body>
 </html>
