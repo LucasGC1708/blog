@@ -15,13 +15,17 @@
             <div class="postar">
                 
                 <a href="index.php"><button>Nova Postagem <i class="fa-solid fa-envelope"></i></button></a>
-                
+                <!-- <i class="fa-solid fa-list"></i> -->
             </div>
             <div class="postagens">
                 <h2>Tema 1</h2>
                 <div class="informacoes">
-                    <img src="" alt="">
-                    <p>sobre</p>
+                    <img src="../img/blog1.jpg" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Dolorum eum, ipsam rerum voluptatibus id alias
+                         nulla, quam, excepturi voluptatem ratione nesciunt.
+                          Eos rerum consequatur animi quaerat ad asperiores, 
+                          voluptatum doloremque!</p>
                 </div>
             </div>
         </div>
