@@ -4,6 +4,8 @@
     if(isset($_SESSION['email'])){
         $email = $_SESSION['email'];
         $nome = $_SESSION['nome'];
+    }else{
+        $nome = "";
     }
     ?>
 <!DOCTYPE html>

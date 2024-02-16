@@ -11,16 +11,24 @@
 <header>
         <nav class="nav-bar">
             <div class="logo" >
-                <a href="index.php"><img src="../img/WhatsApp_Image_2023-12-13_at_16.49.19__1_-removebg-preview.png" alt=""></a> 
+                <h1>PROJETO</h1> 
             </div>
             <h1>Blog Pessoal</h1>
-            <div class="nav-list">  
+            <div class="nav-list"> 
                 <ul>
+                    <?php 
+                        
+                        if(!isset($_SESSION['email'])){
+                            echo "<li class='nav-item'><a href='login.php' class='nav-link'>Login</a></li>";
+                        }else{
+                            echo "<li class='nav-item'><a href='index.php' class='nav-link'>Home</a></li>";
+                        }
+                    
+                    ?>
+                    <!-- <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li>
                     <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li>
                     <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li>
-                    <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li>
-                    <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li>
-                    <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li>
+                    <li class='nav-item'><a href='../html/sistema.php' class='nav-link'>Perfil</a></li> -->
                 </ul>
             </div>
             <div class="mobile-menu-icon">

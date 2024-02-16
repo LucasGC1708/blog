@@ -16,10 +16,10 @@
                 if($nome == $row['autor']){
                     echo "<div class='opcoes'>
                         <div class='edite'>
-                            <a href='editar.php'><i class='fa-solid fa-pen-to-square'></i></a>
+                            <a href='editar.php?id=$row[id]'><i class='fa-solid fa-pen-to-square'></i></a>
                         </div>
                         <div class='lixo'>
-                            <a href='deletar.php'><i  class='fa-solid fa-trash-can'></i></a>
+                            <a href='../sql/delete.php?id=$row[id]'><i  class='fa-solid fa-trash-can'></i></a>
                         </div>
                     </div>";
                 }
